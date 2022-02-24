@@ -1,0 +1,31 @@
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1240px) {
+    .header, .container {
+        width: 984px;
+    }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1024px) {
+    .hide-on-tablet-and-mobile {
+        display: none;
+    }
+}
+
+/* Tablet & PC low resolution */
+@media (min-width: 740px) and (max-width: 1024px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .header, .container {
+        width: 644px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
