@@ -1,0 +1,83 @@
+/* 
+Buổi 4: https://c4eb4-b4-lab1.glitch.me/
+
+✓    1. CSS color cho h1 và p
+✓    2. Sử dung * để set giá trị chung cho toàn bộ trang web là border
+✓    3. Đặt tên class là title cho tiêu đề trang web và CSS color cho class title
+✓    4. Thêm class uppercase để set thuộc tính text-transform là uppercase cho h1
+✓    5. Set id cho h1 là article-title và CSS id với font-family là cursive
+✓    6. Tìm hiểu về cách CSS cho từng thẻ hyperlink a bằng a[href*=’’]
+✓    7. Tìm hiểu về pseudo-class và sử dụng :hover để thay đổi màu khi di chuột vào thẻ a
+✓    8. Tạo hiệu ứng cho các thẻ a
+*/
+
+* {
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #000000;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #00a2ff;
+    font-weight: bold;
+}
+
+p {
+    color: #888888;
+    font-style: italic;
+}
+
+a[href*='florence'] {
+    color: #bb37bb;
+}
+
+a[href*='beijing'] {
+    color: #ffaf02;
+}
+
+a[href*='seoul'] {
+    color: #00a2ff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #cccccc;
+    opacity: 0.6;
+}
+
+a:hover {
+    color: #aa0000;
+    opacity: 0.8;
+    background-color: #cccccc;
+}
+
+.title {
+    color: #aa0000;
+}
+
+#article-title {
+    font-family: cursive, monospace;
+}
+
+.destination {
+    font-size: 32px;
+}
+
+img {
+    display: block;
+    margin: 24px auto 0;
+    width: 40%;
+}
