@@ -1,0 +1,456 @@
+/* BASE CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    /* line-height: 1.6rem; */
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    height: 80px;
+    padding: 2px 16px;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    margin-top: 80px;
+}
+
+/* LOGO CSS */
+.header__logo {
+    height: 100%;
+    padding: 8px 32px;
+}
+
+.header__logo--linked {
+    color: transparent;
+    text-decoration: none;
+}
+
+.header__logo--linked img {
+    width: auto;
+    height: 100%;
+}
+
+/* NAVBAR CSS */
+.header__navbar ul {
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar__item {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.navbar__item a {
+    display: block;
+    padding: 0 16px;
+    line-height: 80px;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+}
+
+.navbar__item a:hover {
+    color: #000000;
+    background-color: rgba(193, 9, 6, 0.2);
+}
+
+.navbar__button a {
+    font-size: 1.8rem;
+    line-height: 40px;
+}
+
+.navbar__button--login a {
+    color: #ffffff;
+    border: 2px solid #c10a06;
+    background-color: #c10a06;
+}
+
+.navbar__button--signup {
+    border: 2px solid #c10a06;
+}
+
+.navbar-mobile__logo, .navbar__button--mobile {
+    display: none;
+}
+
+.navbar-mobile__logo {
+    height: 100%;
+    padding: 8px 32px;
+}
+
+.navbar-mobile__logo--linked {
+    color: transparent;
+    text-decoration: none;
+}
+
+.navbar-mobile__logo--linked img {
+    width: auto;
+    height: 100%;
+}
+
+.navbar-mobile__button {
+    width: 36px;
+    height: 36px;
+    color: #000000;
+    margin: 0 16px 4px;
+    display: none;
+    text-align: center;
+}
+
+.navbar-mobile__button:hover {
+    cursor: pointer;
+    color: #c10a06;
+}
+
+.navbar-mobile__button i {
+    font-size: 32px;
+    padding-top: 6px;
+}
+
+.navbar-mobile__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    animation: fadeIn linear 0.2s;
+}
+
+.navbar-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(200%);
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+.navbar-mobile__close {
+    position: absolute;
+    top: 1.2rem;
+    left: 2rem;
+    width: 4rem;
+    height: 4rem;
+    color: #666;
+    font-size: 4rem;
+}
+
+.navbar-mobile__close:hover {
+    color: #c10a06;
+    cursor: pointer;
+}
+
+.navbar-mobile__list {
+    margin-top: 128px;
+    list-style: none;
+}
+
+.navbar-mobile__item {
+    display: block;
+    color: #333333;
+    font-size: 2rem;
+    line-height: 40px;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+    padding: 1.6rem 2.4rem;
+}
+
+.navbar-mobile__item:hover {
+    color: #000000;
+    background-color: rgba(193, 9, 6, 0.2);
+}
+
+.navbar-mobile__button--wrap {
+    display: flex;
+    padding: 12.8rem 2.4rem 0;
+    justify-content: space-between;
+}
+
+.navbar-mobile__check:checked ~ .navbar-mobile__overlay {
+    display: block;
+}
+
+.navbar-mobile__check:checked ~ .navbar-mobile {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* WELCOME CSS */
+.container__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    padding: 0 1.6rem;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-image: linear-gradient(180deg, #ffffff 0%, #c10a06 80%, #000000 100%);
+}
+
+.container__about h1 {
+    margin: 0 0 1.6rem;
+}
+
+.container__about > p {
+    color: #000;
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* PROJECTS CSS */
+.container__projects {
+    background-image: linear-gradient(180deg, #000000 0%, #ffffff 100%);
+    text-align: center;
+    padding: 10rem 2rem;
+}
+
+.projects__header {
+    max-width: 540px;
+    margin: 0 auto 8rem;
+    font-size: 3rem;
+    line-height: 6.4rem;
+    border-bottom: 0.2rem solid #ffffff;
+}
+
+.projects--wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.projects__item {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: top linear 0.1s;
+}
+
+.projects__item:hover {
+    top: -4px;
+}
+
+.projects__item:hover .project__title {
+    color: #c10a06;
+}
+
+.projects__img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.project__title {
+    font-size: 2rem;
+    padding: 2rem 0.6rem;
+}
+
+.projects__button {
+    background-color: #333333;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1.2rem 2rem;
+    border-radius: 4px;
+}
+
+.projects__button:hover {
+    background-color: #c10a06;
+}
+
+.projects__button i {
+    font-size: 2rem;
+    margin: 4px;
+}
+
+.projects__button:hover i {
+    transform: translateX(4px);
+}
+
+/* CONTACT CSS */
+.container__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    padding: 6rem 2rem;
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(180deg, #ffffff 0%, #c10a06 100%);
+    color: #333333;
+}
+
+.container__contact h1 {
+    margin: 0 0 1.6rem;
+}
+
+.container__contact p {
+    color: #000000;
+    font-size: 2.4rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.contact__social {
+    list-style: none;
+    padding-top: 4rem;
+}
+
+.contact__social li {
+    display: inline-block;
+    padding: 0 1.6rem;
+    line-height: 6rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.contact__social li:hover {
+    transform: translateY(8px);
+}
+
+.contact__social li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contact__social li a i {
+    margin-right: 4px;
+    font-size: 3.2rem;
+}
+
+/* FOOTER CSS */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 0 4px;
+    font-size: 1.2vw;
+    font-weight: 200;
+    background-color: #000000;
+}
+
+/* "ON TOP BUTTON CSS */
+.top-button {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #c10a06;
+}
+
+.button--border {
+    position: fixed;
+    right: 36px;
+    bottom: 36px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3.2px solid #ffffff;
+}
+
+.top-button a i {
+    position: absolute;
+    font-size: 32px;
+    padding: 8px;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* RESPONSIVE CSS */
+@media (max-width: 1024px) {
+    header {
+        height: 64px;
+    }
+
+    .header__navbar--mobile {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 64px;
+        padding: 2px 16px;
+        background-color: #ffffff;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-mobile__logo, .navbar-mobile__button {
+        display: block;
+    }
+
+    .header__logo, .header__navbar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }

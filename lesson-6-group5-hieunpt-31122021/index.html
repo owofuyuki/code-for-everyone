@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mindX School</title>
+    <link rel="icon" href="./assets/images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-pro-5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Header - Logo -->
+        <div class="header__logo">
+            <a href="/" class="header__logo--linked">
+                <img src="./assets/images/logo.png" alt="mindX School">
+            </a>
+        </div>
+        
+        <!-- Header Navigation Bar -->
+        <nav class="header__navbar">
+            <ul>
+                <li class="navbar__item"><a href="#about">ABOUT</a></li>
+                <li class="navbar__item"><a href="#project">PROJECTS</a></li>
+                <li class="navbar__item"><a href="#contact">CONTACT</a></li>
+                <li class="navbar__item navbar__button navbar__button--login"><a href="#">Log In</a></li>
+                <li class="navbar__item navbar__button navbar__button--signup"><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+
+        <!-- Header Navigation Bar for Mobile -->
+        <div class="header__navbar--mobile">
+            <div class="navbar-mobile__logo">
+                <a href="/" class="navbar-mobile__logo--linked">
+                    <img src="./assets/images/logo.png" alt="mindX School">
+                </a>
+            </div>
+            <label for="check" class="navbar-mobile__button">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <input type="checkbox" hidden name="" class="navbar-mobile__check" id="check">
+            <label for="check" class="navbar-mobile__overlay"></label>
+            <nav class="navbar-mobile">
+                <label for="check" class="navbar-mobile__close">
+                    <i class="fal fa-times"></i>
+                </label>
+                <ul class="navbar-mobile__list">
+                    <li>
+                        <a href="#about" class="navbar-mobile__item">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#project" class="navbar-mobile__item">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="navbar-mobile__item">CONTACT</a>
+                    </li>
+                    <li class="navbar-mobile__button--wrap">
+                        <div class="navbar__button navbar__button--login"><a class="navbar-mobile__item" href="#">Log In</a></div>
+                        <div class="navbar__button navbar__button--signup"><a class="navbar-mobile__item" href="#">Sign Up</a></div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Container -->
+    <div id="top" class="container">
+        <!-- Welcome section -->
+        <section id="about" class="container__about">
+            <h1>Hey, I am a mindXer!</h1>
+            <p>{ A Fullstack-overflow Web Developer }</p>
+        </section>
+
+        <!-- Projects section -->
+        <section id="project" class="container__projects">
+            <h2 class="projects__header">There are some of my projects</h2>
+            <div class="projects--wrap">
+                <a href="#" target="_blank" class="projects__item">
+                    <img class="projects__img" src="./assets/images/img-1.png" alt="My Project">
+                    <p class="project__title">&lt; Sample 1 &#47;&gt;</p>
+                </a>
+                <a href="#" target="_blank" class="projects__item">
+                    <img class="projects__img" src="./assets/images/img-2.png" alt="My Project">
+                    <p class="project__title">&lt; Sample 2 &#47;&gt;</p>
+                </a>
+                <a href="#" target="_blank" class="projects__item">
+                    <img class="projects__img" src="./assets/images/img-3.png" alt="My Project">
+                    <p class="project__title">&lt; Sample 3 &#47;&gt;</p>
+                </a>
+                <a href="#" target="_blank" class="projects__item">
+                    <img class="projects__img" src="./assets/images/img-4.png" alt="My Project">
+                    <p class="project__title">&lt; Sample 4 &#47;&gt;</p>
+                </a>
+                <a href="#" target="_blank" class="projects__item">
+                    <img class="projects__img" src="./assets/images/img-5.png" alt="My Project">
+                    <p class="project__title">&lt; Sample 5 &#47;&gt;</p>
+                </a>
+                <a href="#" target="_blank" class="projects__item">
+                    <img class="projects__img" src="./assets/images/img-6.png" alt="My Project">
+                    <p class="project__title">&lt; Sample 6 &#47;&gt;</p>
+                </a>
+            </div>
+            
+            <a href="#" class="projects__button">
+                Show all <i class="fal fa-angle-right"></i>
+            </a>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact" class="container__contact">
+            <h1>Let's work together...</h1>
+            <p>How do you take your coffee?</p>
+            <ul class="contact__social">
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-envelope-open-text"></i>
+                        Send a mail
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-mobile-alt"></i>
+                        Call me
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+        <p>© Created for mindX Technology School</p>
+    </footer>
+
+    <!-- "Scroll back to top" button -->
+    <div class="top-button">
+        <div class="button--border"></div>
+        <a href="#top"><i class="fas fa-angle-up"></i></a>
+    </div>
+</body>
+</html>
