@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 20px;
+    color: #222222;
+}
+
+h1, h2, h3 {
+    margin-bottom: 0.35em;
+}
+
+header {
+    background-color: #20b2aa;
+    color: #ffffff;
+}
+
+p {
+    font-size: 16px;
+    margin: 0 0 1.15em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.card img {
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #663399;
+    display: flex;
+}
+
+.card h3 em {
+    padding: 0.25em;
+    background-color: #eddbff;
+    border-radius: 4px;
+    margin-left: 8px;
+    font-size: 14px;
+    width: 100%;
+    height: 24px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card p {
+    color: #757575;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.card h3 p {
+    font-size: 16px;
+    color: #663399;
+    margin: 0;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #20b2aa;
+    color: #ffffff;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.button:hover {
+    opacity: 0.6;
+}
+
+footer {
+    border-top: 2px solid #20b2aa;
+}
