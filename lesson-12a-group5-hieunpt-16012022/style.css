@@ -1,0 +1,75 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+	text-align: center;
+	font-size: 62.5%;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+	font-size: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.heading {
+	margin-top: 32px;
+}
+
+.description::after, .status::after {
+	display: block;
+    content: "";
+    width: 32vw;
+    height: 2px;
+    margin: 32px auto;
+    background-color: black;
+}
+
+.status {
+	color: #2e8b57;
+}
+
+.btn {
+	display: block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 16px 56px;
+	margin: 16px 0;
+    border-radius: 50px;
+    cursor: pointer;
+	font-size: 2.4rem;
+    min-width: 120px;
+    transition: opacity 0.2s ease;
+}
+
+.btn.change-my-life {
+	margin-top: 32px;
+	background-color: #6495ed;
+}
+
+.btn.nope {
+	background-color: #b22222;
+}
+
+.btn:hover {
+    opacity: 0.8;
+	box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.4);
+}
+
+.btn.change-my-life:hover {
+	background-color: deepskyblue;
+}
+
+.btn.nope:hover {
+	background-color: #ff0000;
+}
