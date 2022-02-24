@@ -1,0 +1,39 @@
+* {
+    margin: 1.5% 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+code {
+    background-color: #4e8be7;
+    color: #fff;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+header, section, aside, footer {
+    margin: 0 1.5%;
+}
+
+.section--wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+section {
+    width: 30%;
+    text-align: center;
+    margin: 0 1.5%;
+}
+
+footer {
+    margin-bottom: 0;
+}
